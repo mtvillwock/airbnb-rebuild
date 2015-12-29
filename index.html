@@ -12,12 +12,79 @@
   <link href="main.css" media="screen" rel="stylesheet">
 </head>
 <body ng-controller="MainCtrl">
-
-  <div id="body">
-    <h1>{{ welcome }}</h1>
+  <!-- Site Nav -->
+  <div id="header">
+    <ng-include src="'templates/navbar.html'"></ng-include>
   </div>
 
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="app.js"></script>
-</body>
-</html>
+  <!-- Splash -->
+  <main id="site-content">
+    <div class="hero">
+      <div class="hero__background" aria-hidden="true">
+        <div class="air-slideshow hero-slideshow">
+          <ul class="slideshow-list list-unstyled">
+            <li class="air-slide air-slide--active">
+              <img alt="Sanfrancisco-252df5ad9ab6e9f1dc77723a6f7b6c4b" src="images/sanfrancisco.jpg" width="100%" />
+            </li>
+            <li class="air-slide">
+              <img data-image-url="images/hero1.jpg"
+              alt=""
+              role="presentation"
+              width="100%">
+            </li>
+            <li class="air-slide">
+              <img data-image-url="images/hero2.jpg"
+              alt=""
+              role="presentation"
+              width="100%">
+            </li>
+            <li class="air-slide">
+              <img data-image-url="images/hero3.jpg"
+              alt=""
+              role="presentation"
+              width="100%">
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="splash-content text-center">
+        <header class="splash">
+          <h1>Welcome Home</h1>
+          <p>Rent unique places to stay from local hosts in 190+ countries.</p>
+          <button class="btn btn-default">How It Works</button>
+        </header>
+
+        <!-- Search Nav -->
+        <div class="col-sm-12">
+          <div id="searchbar">
+            <div class="searchbar">
+              <form action="#" id="searchbar-form">
+                <div class="input-wrapper">
+                  <input type="text" placeholder="Where to?" name="location" class="autocomplete" id="location">
+                  <input type="date" name="check-in">
+                  <input type="date" name="check-out">
+                  <button class="btn btn-danger pull-right">Search</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Splash -->
+    </div>
+
+    <!-- Picture left CTA right -->
+
+    <!-- NEST COLUMNS and ROWs -->
+    <!-- Two col 1 col -->
+    <!-- three col -->
+    <!-- 1 col two col -->
+
+    <ng-include src="'templates/footer.html'"></ng-include>
+    <main>
+
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="app.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,55 @@
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+#footer {
+  padding-bottom: 20px;
+}
+
+#searchbar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #aaa;
+  opacity: 70%;
+}
+
+.hero {
+  height: 600px;
+  position: relative;
+}
+
+.hero__background {
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.splash-content {
+  position: relative;
+}
+
+.splash {
+  color: white;
+}
+
+.select-box {
+  background-color: #eee;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.searchbar {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.searchbar input {
+  float: left;
+  display: block;
+  height: 44px;
+}
