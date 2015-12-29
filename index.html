@@ -1,5 +1,5 @@
 <!doctype HTML>
-<html>
+<html ng-app="airbnb">
 <head>
   <title>Vacation Rentals, Homes, Apartments & Rooms for Rent - Airbnb</title>
 
@@ -11,12 +11,13 @@
 
   <link href="main.css" media="screen" rel="stylesheet">
 </head>
-<body>
+<body ng-controller="MainCtrl">
 
   <div id="body">
-    <h1>Hello World</h1>
+    <h1>{{ welcome }}</h1>
   </div>
 
+  <script src="bower_components/angular/angular.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
