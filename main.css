@@ -29,8 +29,66 @@ body {
   bottom: 0;
 }
 
-.splash-content {
+.hero__content {
+  height: 400px;
   position: relative;
+  z-index: 2;
+}
+
+/*@media (min-width: 768px)
+.hero__content {
+  height: 550px;
+  padding-bottom: 104px;
+  top: 50px;
+}*/
+
+.page-container-full {
+  width: auto;
+}
+
+.page-container {
+  width: 1045px;
+}
+
+.page-container-full:before, .page-container-full:after {
+    content: " ";
+    display: table;
+}
+
+/*@media (min-width: 768px)
+.page-container, .page-container-responsive {
+  padding-left: 25px;
+  padding-right: 25px;
+}*/
+
+.page-container, .page-container-responsive {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12.5px;
+  padding-right: 12.5px;
+}
+
+.page-container:before, .page-container-responsive:before, .page-container:after, .page-container-responsive:after {
+     content: " ";
+     display: table;
+}
+
+.va-container {
+  display: table;
+  position: relative;
+}
+
+.va-middle {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.va-container-h {
+  width: 100%;
+}
+
+.va-container-v {
+  height: 100%;
 }
 
 .text-contrast {
@@ -89,10 +147,10 @@ body {
 }
 
 .btn-contrast:hover, .btn-contrast:focus {
-    border-color: #676c6e;
-    border-bottom-color: #444749;
-    background-color: #676c6e;
-    color: #fff;
+  border-color: #676c6e;
+  border-bottom-color: #444749;
+  background-color: #676c6e;
+  color: #fff;
 }
 
 .btn-semi-transparent {
@@ -101,7 +159,7 @@ body {
 }
 
 .btn-semi-transparent:hover {
-    background-color: rgba(0,0,0,0.35);
+  background-color: rgba(0,0,0,0.35);
 }
 
 .btn-large {
@@ -110,14 +168,19 @@ body {
 }
 
 .hero__content-footer {
-    background-color: #000;
-    background-color: rgba(0,0,0,0.6);
-    bottom: 0;
-    left: 0;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    position: absolute;
-    right: 0;
+  background-color: #000;
+  background-color: rgba(0,0,0,0.6);
+  bottom: 0;
+  left: 0;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  position: absolute;
+  right: 0;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
 }
 
 .searchbar {
@@ -125,8 +188,39 @@ body {
   vertical-align: middle;
 }
 
-.searchbar input {
+.searchbar-wrapper {
+  position: relative;
   float: left;
+}
+
+.searchbar input, .searchbar button {
   display: block;
   height: 44px;
+}
+
+.btn-primary.btn {
+  border-color: #ff5a5f;
+  border-bottom-color: #e00007;
+  background-color: #ff5a5f;
+  color: #fff;
+}
+
+.searchbar__location,
+.searchbar__checkin,
+.searchbar__checkout,
+.searchbar__dates--new,
+.searchbar__guests,
+.searchbar__submit {
+  float: left;
+  margin: 0 -1px 0 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  vertical-align: middle;
+  width: auto;
+}
+
+.searchbar__submit {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  display: inline-block;
 }

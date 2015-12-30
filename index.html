@@ -48,25 +48,26 @@
         </div>
       </div>
 
-      <div class="splash-content text-center">
-        <!-- va-container va-container-v va-container-h -->
-        <header class="splash">
-          <h2 class="text-branding text-contrast text-jumbo">Welcome Home</h2>
-          <h4 class="h4 text-contrast space-4">Rent unique places to stay from local hosts in 190+ countries.</h4>
-          <button class="btn btn-contrast btn-large btn-semi-transparent">How It Works</button>
-        </header>
+      <div class="hero__content page-container page-container-full text-center">
+        <div class="va-container va-container-v va-container-h">
+          <header class="va-middle">
+            <h2 class="text-branding text-contrast text-jumbo">Welcome Home</h2>
+            <h4 class="h4 text-contrast space-4">Rent unique places to stay from local hosts in 190+ countries.</h4>
+            <button class="btn btn-contrast btn-large btn-semi-transparent">How It Works</button>
+          </header>
+        </div>
 
         <!-- Search Nav -->
         <div class="hero__content-footer">
-          <div class="col-sm-12">
+          <div class="col-sm-12 pull-left">
             <div id="searchbar">
               <div class="searchbar">
                 <form action="#" id="searchbar-form">
-                  <div class="input-wrapper">
-                    <input type="text" placeholder="Where to?" name="location" class="autocomplete" id="location">
-                    <input type="date" name="check-in">
-                    <input type="date" name="check-out">
-                    <button class="btn btn-danger pull-right">Search</button>
+                  <div class="searchbar-wrapper">
+                    <input class="searchbar__location" type="text" placeholder="Where to?" name="location" class="autocomplete" id="location">
+                    <input class="searchbar__checkin" type="date" name="check-in">
+                    <input class="searchbar__checkin" type="date" name="check-out">
+                    <button class="btn btn-primary btn-large searchbar__submit">Search</button>
                   </div>
                 </form>
               </div>
