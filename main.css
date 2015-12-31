@@ -8,9 +8,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.navbar {
+  background: transparent;
+  background: transparent;
+  border-bottom: none;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  position: absolute;
+}
+
 header#header {
-  color: #fff;
   line-height: 61px;
+}
+
+header#header a {
+  color: #fff;
+}
+
+header .hdr-btn {
+  display: block;
+  padding: 0 19px;
+  background: transparent;
 }
 
 #footer {
@@ -53,12 +72,12 @@ header#header {
 
 /*.page-container {
   width: 1045px;
-}*/
+  }*/
 
-.page-container-full:before, .page-container-full:after {
-  content: " ";
-  display: table;
-}
+  .page-container-full:before, .page-container-full:after {
+    content: " ";
+    display: table;
+  }
 
 /*@media (min-width: 768px)
 .page-container, .page-container-responsive {
