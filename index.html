@@ -13,9 +13,9 @@
 </head>
 <body ng-controller="MainCtrl">
   <!-- Site Nav -->
-  <div id="header">
+  <header id="header">
     <ng-include src="'templates/navbar.html'"></ng-include>
-  </div>
+  </header>
 
   <!-- Splash -->
   <main id="site-content">
@@ -64,9 +64,9 @@
               <div class="searchbar">
                 <form action="#" id="searchbar-form">
                   <div class="searchbar-wrapper">
-                    <input class="searchbar__location" type="text" placeholder="Where to?" name="location" class="autocomplete" id="location">
-                    <input class="searchbar__checkin" type="date" name="check-in">
-                    <input class="searchbar__checkin" type="date" name="check-out">
+                    <input class="input-large searchbar__location" type="text" placeholder="Where to?" name="location" class="autocomplete" id="location">
+                    <input class="input-large searchbar__checkin" type="date" name="check-in">
+                    <input class="input-large searchbar__checkin" type="date" name="check-out">
                     <button class="btn btn-primary btn-large searchbar__submit">Search</button>
                   </div>
                 </form>
