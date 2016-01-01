@@ -78,34 +78,33 @@
       <!-- End Splash -->
     </div>
 
-    <!-- Picture left CTA right -->
-    <div class="discovery-section page-container-responsive">
-      <div class="section-intro text-center">
-        <h2><strong>Explore the World</strong></h2>
-        <p class="text-lead">See where people are traveling, all around the world.</p>
+    <div ng-controller="CardsCtrl" id="discovery-container">
+      <div class="discovery-section page-container-responsive page-container-no-padding row-space-6" id="weekend-recommendations">
+        <div class="section-intro text-center">
+          <h2><strong>Just for the weekend</strong></h2>
+          <p class="text-lead">Discover new, inspiring places close to home.</p>
+        </div>
+
+        <div class="discovery-tiles">
+          <div class="row">
+            <discoverycard ng-repeat="card in weekendCards" class="{{ card.size }} rm-padding-sm"></discoverycard>
+          </div>
+        </div>
       </div>
 
-      <div class="discovery-tiles">
-        <div class="row">
-          <div class="col-lg-8 col-md-12 rm-padding-sm">
-            <div class="discovery-card row-space-4" style="background-image:url('https://a1.muscache.com/ic/discover/85?interpolation=lanczos-none&output-format=jpg&output-quality=70&v=33b4f2&downsize=655px:326px');">
-              <div class="va-container va-container-h va-container-v">
-                <div class="va-middle text-center text-contrast">
-                  <h2 class="h2">
-                    <strong>New York</strong>
-                  </h2>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 rm-padding-sm row-space-4"></div>
-              </div>
-            </div>
+      <div class="discovery-section page-container-responsive page-container-no-padding row-space-6" id="discover-recommendations">
+        <div class="section-intro text-center">
+          <h2><strong>Explore the World</strong></h2>
+          <p class="text-lead">See where people are traveling, all around the world.</p>
+        </div>
+
+        <div class="discovery-tiles">
+          <div class="row">
+            <discoverycard ng-repeat="card in discoverCards" class="{{ card.size }} rm-padding-sm"></discoverycard>
           </div>
         </div>
       </div>
     </div>
-    <!-- NEST COLUMNS and ROWs -->
-    <!-- Two col 1 col -->
-    <!-- three col -->
-    <!-- 1 col two col -->
 
     <ng-include src="'templates/footer.html'"></ng-include>
     <main>

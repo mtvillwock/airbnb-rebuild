@@ -32,8 +32,15 @@ header .hdr-btn {
   background: transparent;
 }
 
-#footer {
-  padding-bottom: 20px;
+.footer {
+  padding: 50px 0;
+  background-image: url(https://a1.muscache.com/airbnb/static/footer/background13c73b7858fe7c4bc03505fc1f7f672fd.png);
+  background-color: #2b2d2e;
+  color: #fff;
+}
+
+.footer a {
+  color: #fff;
 }
 
 #searchbar {
@@ -129,9 +136,12 @@ header .hdr-btn {
 }
 
 .select-box {
-  background-color: #eee;
-  padding-bottom: 10px;
+  background-color: #565a5c;
+  border: 0;
+  color: #fff;
   padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 2em;
 }
 
 .space-4 {
@@ -273,6 +283,10 @@ form {
 
 .row-space-4 {
   margin-bottom: 25px;
+}
+
+.row-space-6 {
+  margin-bottom: 37.5px;
 }
 
 .rm-padding-sm {
