@@ -258,3 +258,23 @@ form {
 .text-lead {
   font-size: 16px;
 }
+
+/*Start midsection*/
+.discovery-card-wrapper, .discovery-card {
+  height: 344px;
+}
+
+.discovery-card {
+  background-color: #f5f5f5;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.row-space-4 {
+  margin-bottom: 25px;
+}
+
+.rm-padding-sm {
+  padding: 0px 12.5px;
+}
