@@ -48,7 +48,7 @@
         </div>
       </div>
 
-      <div class="hero__content page-container page-container-full text-center">
+      <div class="hero__content page-container-responsive page-container-full text-center">
         <div class="va-container va-container-v va-container-h">
           <header class="va-middle">
             <h2 class="text-branding text-contrast text-jumbo">Welcome Home</h2>
@@ -79,7 +79,7 @@
     </div>
 
     <div ng-controller="CardsCtrl" id="discovery-container">
-      <div class="discovery-section page-container-responsive page-container-no-padding row-space-6" id="weekend-recommendations">
+      <div class="discovery-section page-container-responsive" id="weekend-recommendations">
         <div class="section-intro text-center">
           <h2><strong>Just for the weekend</strong></h2>
           <p class="text-lead">Discover new, inspiring places close to home.</p>
@@ -92,7 +92,7 @@
         </div>
       </div>
 
-      <div class="discovery-section page-container-responsive page-container-no-padding row-space-6" id="discover-recommendations">
+      <div class="discovery-section page-container-responsive row-space-6" id="discover-recommendations">
         <div class="section-intro text-center">
           <h2><strong>Explore the World</strong></h2>
           <p class="text-lead">See where people are traveling, all around the world.</p>
@@ -104,7 +104,18 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> <!-- End Recommendation section -->
+
+    <div id="belong-anywhere-container" class="air-slideshow belong-anywhere" style="background-image:url(https://a2.muscache.com/airbnb/static/homepages/belong-vid-7e730d7c702ce4bbd2ad2f2dc1a300aa.jpg);">
+      <ul class="belong-anywhere__slides list-unstyled belong-anywhere--loaded">
+        <li class="air-slide air-slide--active belong-anywhere__belong"></li>
+      </ul>
+    </div> <!-- End Belong Anywhere -->
+    <div id="community-wrapper" class="community space-4 hide-sm">
+      <div class="space-top-8 space-8 text-center">
+        <h2><strong>Our community</strong></h2>
+      </div>
+    </div><!-- End Community -->
 
     <ng-include src="'templates/footer.html'"></ng-include>
     <main>

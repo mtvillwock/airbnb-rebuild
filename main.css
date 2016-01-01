@@ -1,3 +1,7 @@
+* {
+  border-sizing: border-box;
+}
+
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
@@ -6,6 +10,7 @@ body {
   background-color: #f5f5f5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
 }
 
 .navbar {
@@ -34,7 +39,7 @@ header .hdr-btn {
 
 .footer {
   padding: 50px 0;
-  background-image: url(https://a1.muscache.com/airbnb/static/footer/background13c73b7858fe7c4bc03505fc1f7f672fd.png);
+  /*background-image: url(https://a1.muscache.com/airbnb/static/footer/background13c73b7858fe7c4bc03505fc1f7f672fd.png);*/
   background-color: #2b2d2e;
   color: #fff;
 }
@@ -72,39 +77,48 @@ header .hdr-btn {
   z-index: 2;
 }
 
+@media (min-width: 768px)
+.page-container-responsive {
+    width: 745px;
+}
 
-.page-container-full {
+@media (min-width: 1100px)
+.page-container-responsive {
+    width: 1045px;
+}
+
+.page-container-responsive {
   width: auto;
 }
 
-/*.page-container {
+.page-container {
   width: 1045px;
-  }*/
+}
 
-  .page-container-full:before, .page-container-full:after {
-    content: " ";
-    display: table;
-  }
+.page-container-full:before, .page-container-full:after {
+  content: " ";
+  display: table;
+}
 
-/*@media (min-width: 768px)
+@media (min-width: 768px)
 .page-container, .page-container-responsive {
   padding-left: 25px;
   padding-right: 25px;
-  }*/
+}
 
-  .page-container, .page-container-responsive {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 12.5px;
-    padding-right: 12.5px;
-  }
+.page-container, .page-container-responsive {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12.5px;
+  padding-right: 12.5px;
+}
 
-  .page-container:before, .page-container-responsive:before, .page-container:after, .page-container-responsive:after {
-   content: " ";
-   display: table;
- }
+.page-container:before, .page-container-responsive:before, .page-container:after, .page-container-responsive:after {
+ content: " ";
+ display: table;
+}
 
- .va-container {
+.va-container {
   display: table;
   position: relative;
 }
@@ -292,3 +306,11 @@ form {
 .rm-padding-sm {
   padding: 0px 12.5px;
 }
+
+.belong-anywhere {
+  height: 600px;
+}
+
+/*.belong-anywhere--loaded .belong-anywhere__belong {
+  background-image: url(https://a2.muscache.com/airbnb/static/homepages/belong-vid-7e730d7c702ce4bbd2ad2f2dc1a300aa.jpg);
+}*/
