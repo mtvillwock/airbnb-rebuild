@@ -87,6 +87,12 @@ header .hdr-btn {
     width: 1045px;
 }
 
+@media (min-width: 768px)
+.page-container, .page-container-responsive {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 .page-container-responsive {
   width: auto;
 }
@@ -100,11 +106,6 @@ header .hdr-btn {
   display: table;
 }
 
-@media (min-width: 768px)
-.page-container, .page-container-responsive {
-  padding-left: 25px;
-  padding-right: 25px;
-}
 
 .page-container, .page-container-responsive {
   margin-left: auto;
