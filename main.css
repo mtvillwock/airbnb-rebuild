@@ -304,6 +304,14 @@ form {
   margin-bottom: 37.5px;
 }
 
+.space-8 {
+    margin-bottom: 50px;
+}
+
+.space-top-8 {
+    margin-top: 50px;
+}
+
 .rm-padding-sm {
   padding: 0px 12.5px;
 }
@@ -315,3 +323,17 @@ form {
 /*.belong-anywhere--loaded .belong-anywhere__belong {
   background-image: url(https://a2.muscache.com/airbnb/static/homepages/belong-vid-7e730d7c702ce4bbd2ad2f2dc1a300aa.jpg);
 }*/
+
+.community__container {
+    max-width: 1400px;
+}
+
+.col-center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.community-card--create {
+  background-color:#00d1c1;
+}
