@@ -254,3 +254,7 @@ form {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+.text-lead {
+  font-size: 16px;
+}
