@@ -66,20 +66,23 @@ header .hdr-btn {
   z-index: 2;
 }
 
-@media (min-width: 768px)
-.page-container-responsive {
-  width: 745px;
+@media (min-width: 768px) {
+  .page-container-responsive {
+    width: 745px;
+  }
 }
 
-@media (min-width: 1100px)
-.page-container-responsive {
-  width: 1045px;
+@media (min-width: 1100px) {
+  .page-container-responsive {
+   width: 1045px;
+ }
 }
 
-@media (min-width: 768px)
-.page-container, .page-container-responsive {
-  padding-left: 25px;
-  padding-right: 25px;
+@media (min-width: 768px) {
+  .page-container, .page-container-responsive {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .page-container-responsive {
@@ -282,9 +285,16 @@ form {
 }
 
 /*Start midsection*/
-@media (max-width: 768px)
-.hide-sm {
-  display: none !important;
+@media (max-width: 1100px) {
+  .hide-seattle {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hide-sm {
+    display: none !important;
+  }
 }
 
 .btn-block {
