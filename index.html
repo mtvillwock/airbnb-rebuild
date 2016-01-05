@@ -78,7 +78,7 @@
       <!-- End Splash -->
     </div>
 
-    <div ng-controller="CardsCtrl" id="discovery-container">
+    <div ng-controller="CardsCtrl" id="discovery-container" class="container">
       <div class="discovery-section page-container-responsive" id="weekend-recommendations">
         <div class="section-intro text-center">
           <h2><strong>Just for the weekend</strong></h2>
@@ -87,46 +87,51 @@
 
         <div class="discovery-tiles">
           <div class="row">
-            <discoverycard ng-repeat="card in weekendCards" class="{{ card.size }} rm-padding-sm"></discoverycard>
+            <discoverycard ng-repeat="card in weekendCards" class="col-lg-4 rm-padding-sm col-md-12"></discoverycard>
+
+            <div class="col-sm-12 col-lg-4 col-lg-offset-4 row-space-top-4">
+              <a href="#" class="btn btn-block btn-large space-top-8">
+                See All Destinations</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="discovery-section page-container-responsive row-space-6" id="discover-recommendations">
-        <div class="section-intro text-center">
-          <h2><strong>Explore the World</strong></h2>
-          <p class="text-lead">See where people are traveling, all around the world.</p>
-        </div>
+        <div class="discovery-section page-container-responsive row-space-6" id="discover-recommendations">
+          <div class="section-intro text-center">
+            <h2><strong>Explore the World</strong></h2>
+            <p class="text-lead">See where people are traveling, all around the world.</p>
+          </div>
 
-        <div class="discovery-tiles">
-          <div class="row">
-            <discoverycard ng-repeat="card in discoverCards" class="{{ card.size }} rm-padding-sm"></discoverycard>
+          <div class="discovery-tiles">
+            <div class="row">
+              <discoverycard ng-repeat="card in discoverCards" class="{{ card.size }} rm-padding-sm"></discoverycard>
+            </div>
           </div>
         </div>
-      </div>
-    </div> <!-- End Recommendation section -->
+      </div> <!-- End Recommendation section -->
 
-    <div id="belong-anywhere-container" class="air-slideshow belong-anywhere" style="background-image:url(https://a2.muscache.com/airbnb/static/homepages/belong-vid-7e730d7c702ce4bbd2ad2f2dc1a300aa.jpg);">
-      <ul class="belong-anywhere__slides list-unstyled belong-anywhere--loaded">
-        <li class="air-slide air-slide--active belong-anywhere__belong"></li>
-      </ul>
-    </div> <!-- End Belong Anywhere -->
+      <div id="belong-anywhere-container" class="air-slideshow belong-anywhere" style="background-image:url(https://a2.muscache.com/airbnb/static/homepages/belong-vid-7e730d7c702ce4bbd2ad2f2dc1a300aa.jpg);">
+        <ul class="belong-anywhere__slides list-unstyled belong-anywhere--loaded">
+          <li class="air-slide air-slide--active belong-anywhere__belong"></li>
+        </ul>
+      </div> <!-- End Belong Anywhere -->
 
-    <div id="community-wrapper" class="community space-4 hide-sm">
-      <div class="space-top-8 space-8 text-center">
-        <h2><strong>Our community</strong></h2>
-      </div>
-      <ul class="community-container col-center list-unstyled">
-        <li class="col-md-6 col-lg-3 space-md-4">
-          <div class="community-card community-card--create"></div>
-        </li>
-      </ul>
-    </div><!-- End Community -->
+      <div id="community-wrapper" class="community space-4 hide-sm">
+        <div class="space-top-8 space-8 text-center">
+          <h2><strong>Our community</strong></h2>
+        </div>
+        <ul class="community-container col-center list-unstyled">
+          <li class="col-md-6 col-lg-3 space-md-4">
+            <div class="community-card community-card--create"></div>
+          </li>
+        </ul>
+      </div><!-- End Community -->
 
-    <ng-include src="'templates/footer.html'"></ng-include>
-    <main>
+      <ng-include src="'templates/footer.html'"></ng-include>
+      <main>
 
-      <script src="bower_components/angular/angular.js"></script>
-      <script src="app.js"></script>
-    </body>
-    </html>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="app.js"></script>
+      </body>
+      </html>

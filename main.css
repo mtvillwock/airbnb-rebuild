@@ -37,17 +37,6 @@ header .hdr-btn {
   background: transparent;
 }
 
-.footer {
-  padding: 50px 0;
-  /*background-image: url(https://a1.muscache.com/airbnb/static/footer/background13c73b7858fe7c4bc03505fc1f7f672fd.png);*/
-  background-color: #2b2d2e;
-  color: #fff;
-}
-
-.footer a {
-  color: #fff;
-}
-
 #searchbar {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -79,12 +68,12 @@ header .hdr-btn {
 
 @media (min-width: 768px)
 .page-container-responsive {
-    width: 745px;
+  width: 745px;
 }
 
 @media (min-width: 1100px)
 .page-container-responsive {
-    width: 1045px;
+  width: 1045px;
 }
 
 @media (min-width: 768px)
@@ -151,12 +140,20 @@ header .hdr-btn {
 }
 
 .select-box {
-  background-color: #565a5c;
   border: 0;
   color: #fff;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 2em;
+}
+
+.select-box select {
+  background-color: #565a5c;
+}
+
+.row-condensed {
+  margin-left: -6.25px;
+  margin-right: -6.25px;
 }
 
 .space-4 {
@@ -285,6 +282,17 @@ form {
 }
 
 /*Start midsection*/
+@media (max-width: 768px)
+.hide-sm {
+  display: none !important;
+}
+
+.btn-block {
+  display: block;
+  white-space: normal;
+  width: 100%;
+}
+
 .discovery-card-wrapper, .discovery-card {
   height: 344px;
 }
@@ -305,11 +313,11 @@ form {
 }
 
 .space-8 {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .space-top-8 {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .rm-padding-sm {
@@ -320,20 +328,53 @@ form {
   height: 600px;
 }
 
-/*.belong-anywhere--loaded .belong-anywhere__belong {
-  background-image: url(https://a2.muscache.com/airbnb/static/homepages/belong-vid-7e730d7c702ce4bbd2ad2f2dc1a300aa.jpg);
-}*/
+/*Handling Seattle responsiveness*/
+.col-switch {
+  margin-bottom: -1000px;
+  margin-top: 344px;
+}
+
+.col-md-push-6 {
+  left: -33.3%;
+}
 
 .community__container {
-    max-width: 1400px;
+  max-width: 1400px;
 }
 
 .col-center {
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .community-card--create {
   background-color:#00d1c1;
+}
+
+
+.footer {
+  padding: 50px 0;
+  /*background-image: url(https://a1.muscache.com/airbnb/static/footer/background13c73b7858fe7c4bc03505fc1f7f672fd.png);*/
+  background-color: #2b2d2e;
+  color: #fff;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer-divider {
+  border-color: #aaa;
+  border-color: rgba(255,255,255,0.2);
+}
+
+.icons a {
+  border: 1px gray solid;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.icons i {
+  margin: 10px;
 }
