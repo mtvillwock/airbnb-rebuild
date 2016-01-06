@@ -95,7 +95,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> <!-- End weekend recommendation -->
 
         <div class="discovery-section page-container-responsive row-space-6" id="discover-recommendations">
           <div class="section-intro text-center">
@@ -108,8 +108,8 @@
               <discoverycard ng-repeat="card in discoverCards" class="{{ card.size }} rm-padding-sm"></discoverycard>
             </div>
           </div>
-        </div>
-      </div> <!-- End Recommendation section -->
+        </div> <!-- End discover recommendations -->
+      <!-- End Recommendation section -->
 
       <div id="belong-anywhere-container" class="air-slideshow belong-anywhere" style="background-image:url(https://a2.muscache.com/airbnb/static/homepages/belong-vid-7e730d7c702ce4bbd2ad2f2dc1a300aa.jpg);">
         <ul class="belong-anywhere__slides list-unstyled belong-anywhere--loaded">
@@ -122,16 +122,26 @@
           <h2><strong>Our community</strong></h2>
         </div>
         <ul class="community-container col-center list-unstyled">
+          <!-- Individual community cards as list items here -->
           <li class="col-md-6 col-lg-3 space-md-4">
             <div class="community-card community-card--create"></div>
           </li>
+
+          <li class="col-md-6 col-lg-3 space-md-4">
+            <div class="community-card community-card--traveling">
+              <a href="#" class="community-card__link text-center">
+                <div class="background-cover"></div>
+              </a>
+            </div>
+          </li>
         </ul>
       </div><!-- End Community -->
+    </div>
 
-      <ng-include src="'templates/footer.html'"></ng-include>
-      <main>
+    <ng-include src="'templates/footer.html'"></ng-include>
+    <main>
 
-        <script src="bower_components/angular/angular.js"></script>
-        <script src="app.js"></script>
-      </body>
-      </html>
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="app.js"></script>
+    </body>
+    </html>
